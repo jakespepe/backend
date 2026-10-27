@@ -334,3 +334,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 Built with ❤️ for the Stellar ecosystem
+
+## Fix for Issue #197: No chaos engineering tests for Horizon downtime
+
+Add tests simulating Horizon API unavailability to verify graceful degradation and transaction retry queuing. Untested failure modes risk data loss during outages.
